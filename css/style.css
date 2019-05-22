@@ -1,0 +1,17 @@
+body {
+    background-color: darksalmon
+};
+
+#logo {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+#encabezado {
+    background-color: darkseagreen
+}
+
+h1 {
+    font-family: Verdana
+}

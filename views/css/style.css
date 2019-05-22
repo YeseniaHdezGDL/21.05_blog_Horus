@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+}
+#main_header {
+    background-color: #F6D3F7;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px #666;
+}
+#main {
+    background-color: #BC69BD;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px #666;
+}
+
+
+#logo {
+   width: 80px;
+   height: 80px;
+   border-radius: 50px;
+   border: 20px;
+   border: 3px solid blueviolet;
+   box-shadow: 10px 10px 10px #666;
+}
+
+h1 {
+    color: black;
+    text-shadow: 4px 4px 5px rgba(0,0,0,.75);
+    text-align: center
+}
+button {
+    float: right;
+    border: 3px solid blueviolet;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px  #666;
+}
+#nav1 img {
+    width: 30px;
+}
+#titulo {
+    display: inline;
+}
+h1 {
+    align-content: center;
+}
+
+
