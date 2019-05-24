@@ -1,0 +1,43 @@
+body {
+    background-color: beige;
+}
+
+#header-top-bar {
+    border-bottom: none #323232;
+        border-bottom-width: initial;
+        border-bottom-style: none;
+        border-bottom-color: rgb(50, 50, 50);
+        color: #606060;
+        position: relative;
+        z-index: 3;
+}
+
+#header-top-bar-right   {
+	float: right;
+	padding: 10px 20px;
+}
+#header-top-bar-wrap.be-wrap #header-top-bar-right {
+	padding-right: 0px;
+}
+
+#header-top-bar-wrap i.font-icon {
+	margin-bottom: 0px;
+}
+
+#header-top-bar, #header-bottom-bar {
+	line-height: 25px;
+}
+
+#header-top-bar{
+	position: relative;
+	z-index: 3;
+}
+#header-top-bar .topbar-menu-container{
+	display: inline-block;
+}
+#topbar-menu > li:after{
+	content: " | ";
+} 
+#topbar-menu > li:last-child:after{
+	content: "";
+} 

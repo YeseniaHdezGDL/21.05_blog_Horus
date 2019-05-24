@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
+            <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+
         <meta charset="utf-8">
-        <title>WeMan Connect</title>
-        <link rel="shortcut icon" type= "image/jpg" href="favicon.ico" >
+        <title>WeMan Connect Blog</title>
+        <link rel="shortcut icon" type= "image/jpg" href="/img/favicon.ico" >
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    </head>
-    <body>
 
-        
-        <header id="main_header">
-            <nav>
-                <img id="logo" src="img/logo.jpg" width="50px" alt="Logotipo WeMan Connect" href="http://www.wemanconnectblog.com">
-                <h1 id="titulo">WeMan Connect Blog</h1>
-                <div id="nav1">
-                    <button>
-                        <i class="far fa-user-circle fa-3x"></i>
-                        <a href="FORMULARIO PARA CREAR NOTA"></a>
-                    </button>
-                    <button>
-                        <i class="fas fa-pen-alt fa-3x"></i></i>
-                        <a href="FORMULARIO PARA ENTRAR"></a>
-                    </button>
+        <script type="text/javascript">
+            let ctrllogin = document.getElementById("botonlogin");
+            ctrllogin.addEventHandler("click", login);
+            ctrllogin.addEventHandler("click", () => {
+                login(param1, param2);
+            });
+            
+            function dibujar () {
+                let cont = document.getElementById('cont_comentarios');
+                for (let i = 0; i < 5; i++) {
+                    let nvoComment = '<div class="comentario" id="com'+i+'">'+
+                <div class="comentario_hdr">
+                    '<h3 id="titulo_ '+i+' ">' + 'comentario '+i+'</h3>'
+                    '<p id="autor">'+i+'</p>'
                 </div>
-                <div class="herramientasnav" src="">
+                <div id="contenido" class="comentario_cont">
+                ${i}Hola bebe, que tengas un excelente día y pues te mando besos, y pues no sé, no dejo de pensar mucho en ti, no sé, me gustas tanto, va? Pues no sé, quisiera, no sé, el sábado salir, no sé, pero quisiera conocerte, tengo tantas ganas de decirte cosas lindas que pues, no sé.
+                <img src="./ejemplo.jpg" alt="imagen de ejemplo">
+                </div>
+
+                    cont.innerHTML += nvoComment;
+                }
+            }
+            function inicia () {
+                dibujar()
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <img id="logo" src="img/logo.jpg" width="50px" alt="Logotipo WeMan Connect"> 
+                <h1 >WeMan Connect Blog</h1>
+                <div id="botones">
+                    <button>
+                        <a href="https://www.facebook.com/wemanconnect/">
+                            <i class="fab fa-facebook fa-5x" style="color: rgb(128, 18, 54);"></i>
+                        </a>
+                    </button>
+                    <button>
+                        <i class="fas fa-search fa-5x" style="color: rgb(128, 18, 54);"></i>
+                        <a href="Búsqueda"></a>
+                    </button>
                 </div>
             </nav>
         </header>
 
+        <div class="container">
+            <div class="izquierda">
+                <h2>Título nota 1</h2>
+                <p>
+                    Hola bebe, que tengas un excelente día y pues te mando besos, y pues no sé, no dejo de pensar mucho en ti, no sé, me gustas tanto, va? Pues no sé, quisiera, no sé, el sábado salir, no sé, pero quisiera conocerte, tengo tantas ganas de decirte cosas lindas que pues, no sé.
+                </p>
+                </form>
+            </div>
+            <div class="derecha">
+                    <h2>Entrar</h2>
 
+            <form action="/MANDARLO A BACKEND">
 
+                <div class="contenedoravatar">
+                    <img src="img/avatar.png" alt="monito de entrada" class="avatar">
+                </div>
 
+                <div class="contenedorform">
+                    <label for="username"> <b>Username</b></label>
+                    <input type="text" placeholder="Escribe tu usuario" name="username" required>
 
-        <main id="main">
-            <article>
-                <h2 id="título" >Entrada de noticia</h2>
-                <p id="fecha">Fecha</p>
-                <p id="id">id</p>
-                <p id="cuerpo">cuerpo</p>
-                <img src="" alt="">
-            </article>
-        </main>
-        <footer></footer>
+                    <label for="password"> <b>Contraseña</b></label>
+                    <input type="text" placeholder="Escribe tu contraseña" name="password" required>
+
+                    <button type="submit">Entrar</button>
+                </div>
+
+                <div class="contenedorform" style="background-color: cadetblue">
+                    <button type="button" class="cancelbuton">Cancelar</button>
+                    <span class="password">¿Olvidaste tu <a href="#"> contraseña?</a> ?</span>
+                </div>
+            </div>
+        </div>
+
     </body>
+
 </html>
